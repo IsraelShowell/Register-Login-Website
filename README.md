@@ -32,5 +32,5 @@ Uploaded to Github
 # Future Features to Implement:
 - Display all information about the user who is logged in
 - Improve the UI for the user
-- Host this program on a server so people on the internet can find and register
+- Host this program on a server so people on the internet can find and register online
 
