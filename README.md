@@ -22,22 +22,6 @@ Initial Version <br>
 Uploaded to Github
 
 
-# Packages Used as of V-1.00:
-Package      Version
------------- -------
-blinker      1.7.0
-click        8.1.7
-colorama     0.4.6
-Flask        3.0.2
-Flask-WTF    1.2.1
-itsdangerous 2.1.2
-Jinja2       3.1.3
-MarkupSafe   2.1.5
-pip          22.0.4
-setuptools   58.1.0
-Werkzeug     3.0.1
-WTForms      3.1.2
-
 # Current Features as of V-1.00:
 - Program creates and connects to a database and creates a table if necessary
 - A user can enter in a username and password to login 
