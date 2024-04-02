@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--Israel Showell-->
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PingPongTournamentRegistrationForm</title>
+    
+	<!--Looks for the url of a css file that I will add in the future-->
+	<link rel="stylesheet" type=text/css href="{{url_for('static',filename='custom.css')}}">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"/>
+
+</head>
+
+<body>
+<!--
+This snippet creates a registration form for a PingPong Tournament, 
+displaying errors for each field if present, 
+and includes inputs for username, password, phone number, gender, address, and age.
+-->
+   <h1 style='text-align: center; color: red; font-size: 25px;'>PingPongTournament RegistrationForm </h1>
+   {% for message in form.Username.errors%}
+   <div{{message}}</div>
+   {%endfor%}
+   {% for message in form.PhoneNumber.errors%}
+   <div{{message}}</div>
+   {%endfor%}
+   {% for message in form.Password.errors%}
+   <div{{message}}</div>
+   {%endfor%}
+   
+   <form action="http://localhost:5000/registrationform" method='post'>
+   
+		{{form.hidden_tag() }}
+	
+	<div class="table-section">
+	
+		<table>
+			<tr>
+				<td>{{form.Username.label}}</td>
+				<td>{{form.Username}}</td>
+			</tr>
+			<tr>
+				<td>{{form.Password.label}}</td>
+				<td>{{form.Password}}</td>
+			</tr>
+			<tr>
+				<td>{{form.PhoneNumber.label}}</td>
+				<td>{{form.PhoneNumber}}</td>
+			</tr>
+			<tr>
+				<td>{{form.Gender.label}}</td>
+				<td>{{form.Gender}}</td>
+			</tr>
+			<tr>
+				<td>{{form.Address.label}}</td>
+				<td>{{form.Address}}</td>
+			</tr>
+			<tr>
+				<td>{{form.Age.label}}</td>
+				<td>{{form.Age}}</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>{{form.Submit(class="anchor-button")}}</td>
+			</tr>
+		</table>
+	</div>
+	<!--Looks for the Home function in the app.py script-->
+	<p><a href="{{ url_for('Home') }}"><strong>Home</strong></a></p>
+	<!--Looks for the login function in the app.py script-->
+	<p><a href="{{ url_for('login') }}"><strong>Login</strong></a></p>
+	
+</body>
+</html>

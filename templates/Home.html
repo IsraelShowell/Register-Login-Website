@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--Israel Showell-->
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+	<!--Looks for the url of a css file that I will add in the future-->
+    <link rel="stylesheet" type=text/css href="{{url_for('static',filename='custom.css')}}">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"/>
+
+</head>
+
+<body>
+  <h1>Home</h1>
+  <!--Looks for the login function in the app.py script-->
+  <p><a href="{{ url_for('login') }}"><strong>Login</strong></a></p>
+  <!--Looks for the registrationForm function in the app.py script-->
+  <p><a href="{{ url_for('registrationForm') }}"><strong>Register</strong></a></p>
+  
+</body>
+</html>
