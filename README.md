@@ -22,7 +22,6 @@ and database management actions including, but not limited to;
 Initial Version <br>
 Uploaded to Github
 
-# Version History:
 # V-1.10: (4/3/2024)
 Reconfigured links in the HTML to move to hosting the website online <br>
 Website accessible online <br>
