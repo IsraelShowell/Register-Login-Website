@@ -4,7 +4,7 @@
 # Project: Register-Login-Website
 # Version: 1.10
 
-#Description:
+# Description:
 This will be a mock website where a user can register an account with a username and password, and then login into their account.
 This is a mock website register/login project that uses SQLite as its database system, HTML/CSS Front-End, and Python as its Back-End. <br>
 This project is a way for me to practice Flask development, linking HTML/CSS Front-End to Python Back-End,
