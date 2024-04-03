@@ -25,7 +25,7 @@ Uploaded to Github
 # Version History:
 # V-1.10: (4/3/2024)
 Reconfigured links in the HTML to move to hosting the website online <br>
-Website accessible online
+Website accessible online <br>
 https://ishowell.pythonanywhere.com/
 
 # Current Features as of V-1.10:
