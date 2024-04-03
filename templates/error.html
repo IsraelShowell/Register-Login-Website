@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!--Israel Showell-->
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ERROR</title>
-	
+
 	<!--Looks for the url of a css file that I will add in the future-->
     <link rel="stylesheet" type=text/css href="{{url_for('static',filename='custom.css')}}">
 
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-   <form action="http://localhost:5000/error" method='post'>
+   <form action="{{ url_for('Home') }}" method='post'>
    <h1 style='text-align: center; color: pink; font-size: 50px;'> User Already Exists! Try again with a new username!</h1>
    <!--Looks for the Home function in the app.py script-->
    <p><a href="{{ url_for('Home') }}"><strong>Home</strong></a></p>

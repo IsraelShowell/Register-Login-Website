@@ -5,6 +5,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+	<!--Looks for the url of a css file that I will add in the future-->
+    <link rel="stylesheet" type=text/css href="{{url_for('static',filename='custom.css')}}">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"/>
+
+</head>
+<!DOCTYPE html>
+<!--Israel Showell-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PingPong Tournament Login</title>
 	<!--Looks for the url of a css file that I will add in the future-->
     <link rel="stylesheet" type=text/css href="{{url_for('static',filename='custom.css')}}">
@@ -18,7 +34,7 @@
 <body>
   <section class="login-section">
 	<h1>Welcome to the PingPong Tournament Login Page!</h1>
-	<form class="login-form" action="http://127.0.0.1:5000/login" method="POST">
+	<form class="login-form" action="{{ url_for('login') }}" method="POST">
 		<p>Username:<input type="text" name="Username"/></p>
 		<p>Password:<input type="text" name="Password"/></p>
 		<p><input type="submit" name="enter"/></p>

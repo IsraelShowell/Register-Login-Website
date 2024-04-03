@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!--Israel Showell-->
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PingPongTournamentRegistrationForm</title>
-    
+
 	<!--Looks for the url of a css file that I will add in the future-->
 	<link rel="stylesheet" type=text/css href="{{url_for('static',filename='custom.css')}}">
 
@@ -18,8 +18,8 @@
 
 <body>
 <!--
-This snippet creates a registration form for a PingPong Tournament, 
-displaying errors for each field if present, 
+This snippet creates a registration form for a PingPong Tournament,
+displaying errors for each field if present,
 and includes inputs for username, password, phone number, gender, address, and age.
 -->
    <h1 style='text-align: center; color: red; font-size: 25px;'>PingPongTournament RegistrationForm </h1>
@@ -32,13 +32,13 @@ and includes inputs for username, password, phone number, gender, address, and a
    {% for message in form.Password.errors%}
    <div{{message}}</div>
    {%endfor%}
-   
-   <form action="http://localhost:5000/registrationform" method='post'>
-   
+
+   <form action="{{ url_for('registrationForm') }}" method='post'>
+
 		{{form.hidden_tag() }}
-	
+
 	<div class="table-section">
-	
+
 		<table>
 			<tr>
 				<td>{{form.Username.label}}</td>
@@ -74,6 +74,6 @@ and includes inputs for username, password, phone number, gender, address, and a
 	<p><a href="{{ url_for('Home') }}"><strong>Home</strong></a></p>
 	<!--Looks for the login function in the app.py script-->
 	<p><a href="{{ url_for('login') }}"><strong>Login</strong></a></p>
-	
+
 </body>
 </html>
