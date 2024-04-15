@@ -23,6 +23,7 @@ displaying errors for each field if present,
 and includes inputs for username, password, phone number, gender, address, and age.
 -->
    <h1 style='text-align: center; color: red; font-size: 25px;'>PingPongTournament RegistrationForm </h1>
+<center>
    {% for message in form.Username.errors%}
    <div{{message}}</div>
    {%endfor%}
@@ -75,6 +76,6 @@ and includes inputs for username, password, phone number, gender, address, and a
 	<p><a href="{{ url_for('Home') }}"><strong>Home</strong></a></p>
 	<!--Looks for the login function in the app.py script-->
 	<p><a href="{{ url_for('login') }}"><strong>Login</strong></a></p>
-
+</center>
 </body>
 </html>
