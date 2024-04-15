@@ -2,7 +2,7 @@
 # Start Date: 3/29/2024
 # End Date: 4/2/2024
 # Project: Register and Login Website 
-# Version: 1.00
+# Version: 1.20
 
 # Description:
 """
