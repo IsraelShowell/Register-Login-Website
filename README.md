@@ -27,18 +27,22 @@ Reconfigured links in the HTML to move to hosting the website online <br>
 Website accessible online <br>
 https://ishowell.pythonanywhere.com/
 
-# Current Features as of V-1.10:
+# V-1.20: (4/15/2024)
+Improved UI on each page
+
+# Current Features as of V-1.20:
 - Program creates and connects to a database and creates a table if necessary
 - A user can enter in a username and password to login 
 - If they exist, they will be sent to a dashboard page, otherwise, they will be taken to the register page
 - A user can register a profile with a username and password using a FlaskForm
 - If the user tries to create an account that exists already, they will be not be logged in
 - A user can now find and use the website online!
+- Improved UI
 
 # Future Features to Implement:
 - Display all information about the user who is logged in
-- Improve the UI for the user
+- Improve the UI (Progress)
 - Host this program on a server so people on the internet can find and register online (Completed)
-https://ishowell.pythonanywhere.com/
+- Site Link: https://ishowell.pythonanywhere.com/
 
 
