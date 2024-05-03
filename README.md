@@ -17,6 +17,9 @@ and database management actions including, but not limited to;
 - Connecting Front-Ends and Back-Ends together
 - Developing Web Applications
 
+# Notes:
+ChatGPT, and other online tools were NOT extensively used to develop this code, they were mostly used to explain documentation and explain errors as I am still learning! <br>
+
 # Version History:
 # V-1.00: (3/29-4/2/2024)
 Initial Version <br>
