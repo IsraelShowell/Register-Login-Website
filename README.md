@@ -2,7 +2,7 @@
 # Start Date: 3/29/2024
 # End Date: 4/2/2024
 # Project: Register-Login-Website
-# Version: 1.10
+# Version: 1.30
 
 # Description:
 This will be a mock website where a user can register an account with a username and password, and then login into their account.
